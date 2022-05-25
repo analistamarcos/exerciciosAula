@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contato</title>
+        <meta charset="utf-8"/>
+    </head>
+    <!--<link rel="stylesheet" href="css/estilo.css" type="text/css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <body>
+       
+     <header> 
+         <nav class="container" class="text-center mb-2">
+        
+        <div class="row">
+            <div class="col-sm-2"> 
+                 
+                <a href="index.com"><img src="imagens/logotipo.jpg" width="140"/>  </a> 
+            
+            </div> 
+        </div>      
+            <a target="_blank" href="https://www.amazon.com.br/">Visite a Amazon</a>
+            <a href="index.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+        </nav>
+    </header>
+         <!--Setor de conteúdo-->
+        <section class="page">
+         <section class="container"><br><br>
+            <h1 class="text-center">Entre em contato conosco</h1>
+            <!--Formulário de contato-->
+            <article>
+            <form method="post" action="index.html" id="formLogin" class="w50 mx-auto p-3 mt-5 mb-5"
+            style="border: 1px solid #ccc; border-radius:12 px;">
+                <fieldset>
+                    <legend></legend>
+                    <div class="form-group".bg-warning>                       
+                        <label>Nome:</label><br>
+                        <input name="nomeContato" id="nomeContato" class="form-control"  maxlengt="50" required>                   
+                    </div>
+                    <div>                       
+                        <label>Email:</label><br>
+                        <input type="email" name="emailLogin" id= emailLogin  class="form-control"> <br>                  
+                    </div>
+                    <label>Comentários:<br></label>
+                    <div>                       
+                       
+                        <textarea name="Comentários"rows="8"> </textarea>                 
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-info" id="btlogin">Confirmar</button> 
+                    </div>
+                    
+                </fieldset>
+            </form>
+        </article>
+            <article>
+                    <!--<b> ou <strong> e <i> ou <em> dá ênfase no texto para o buscador-->
+                <p>
+                    <b><i>Donec lectus eros</i></b>, hendrerit sit amet justo non, egestas malesuada est. Fusce efficitur bibendum turpis non ullamcorper.<br/>
+                     <b>Etiam eget augue nec leo elementum dapibus quis ullamcorper ipsum</b>. Fusce commodo malesuada nibh ut rutrum.<br/>
+                      Mauris suscipit tristique odio, at cursus magna cursus a.<br/> Duis imperdiet in odio at dictum. Integer vestibulum, turpis nec blandit pretium, sem libero varius libero, ac auctor neque<br/>
+                       velit et ex. Suspendisse lacus magna, ultricies vitae ultrices in, ultrices vel lectus.
+                </p>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptas maxime eligendi suscipit ducimus eius laborum.<br/>
+                     Quo inventore officia aperiam eius. Placeat nihil necessitatibus vel commodi cupiditate consequatur saepe fuga.</p>
+
+                   <hr/>
+                         
+                <!--Lista não Ordenada-->
+                <ul type="square"> <!--unordered list obs: Se eu coloco type= "square" ele coloca quadrado ao invés de bolinha-->
+
+                    <li>Mais Vendidos</li>
+                    <li>Best Sellers Mundiais</li>
+                    <li>Autores</li>
+                    <li>Categorias</li>
+                </ul>
+
+                <!--Formulário de Contato-->
+                <form method="get" action="https://www.google.com/search">
+                    <fieldset>
+                        <legend>Pesquisa no google</legend>
+                        <div>                       
+                            <label>Palavra-chave :</label>
+                            <input name="q"maxlengt="50">                   
+                        </div>
+                        <div>
+                            <button>Confirmar</button>
+                        </div>
+
+            </article>
+            <article>
+                <h2>Livros que podem ser do seu interesse</h2>
+                <!-- TabelA <tABLE> TABELA <tr>  linh a<td> (coluna)-->]
+
+                    <table border="1" width="400">
+                        <tr>
+                            <th>Categoria</th>
+                            <th>Autor</th>
+                            <th>Título</th>
+                        </tr>
+                        <tr>
+                            <td>Suspense</td>
+                            <td>Jarbas Neto</td>
+                            <td>Beco do Absurdo</td>
+                        </tr>
+                        <tr>
+                            <td>Aventura</td>
+                            <td>Aurora Bleiser</td>
+                            <td>Flux e os Piratas do Espaço</td>
+                        </tr>
+                    </table>
+                    <h2>Promoção Relâmpago - Desconto de 20%</h2>
+                    <div> <!--imagem em forma de-->
+                        <a target="blank" href="https://www.amazon.com.br/Em-Busca-Wondla-Tony-Diterlizzi/dp/8580571782">
+
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/51a6cC07f%2BL._SY344_BO1,204,203,200_QL70_ML2_.jpg" width="150">
+
+                        </a>
+                    </div>
+                -
+            </article>
+        </section>
+        </section>
+
+        <!--Setor de rodapé-->
+        <footer>
+            <p>&copy;<b>2022 - Todos os direitos reservados.</b></p>
+        </footer>   
+        
+    </body>
+</html>
+
+<!--
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+<header class="text-center mb-3">
+<img src="imagens/logotipo.jpg" width="120">
+</header>
+
+<hr>
+<section class="page">
+
+<section class="container">
+<h1 class="text-center">Login</h1>
+<article>
+<form method="post" action="index.html" id="formLogin" class="w-50 mx-auto p-3 mt-5 mb-5"
+style="border: 1px solid #ccc; border-radius: 12px;">
+<fieldset>
+<legend>Preencha os campos para Entrar</legend>
+<div class="form-group">
+<label>Email</label>
+<input type="email" name="emailLogin" id="emailLogin" class="form-control"
+placeholder="Digite seu Email">
+</div>
+<div class="form-group">
+<label>Senha</label>
+<input type="password" name="passwLogin" id="passwLogin" class="form-control"
+placeholder="Digite sua Senha">
+</div>
+<div>
+<button type="button" class="btn btn-info" id="btlogin">Confirmar</button>
+</div>
+</fieldset>
+</form>
+
+</article>
+</section>
+
+</section>
+<footer class="bg-dark p-4 text-white text-center mt-4">
+<p class="copy">&copy; 2022 - Todos direitos Reservados</p>
+</footer>
+</body>
+<script src="js/login.js"></script>
+
+</html>
+-->

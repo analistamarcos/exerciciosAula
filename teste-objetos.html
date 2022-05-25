@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Livraria</title>
+ </head>
+    <body>
+    <h1>Trabalhando com Objetos</h1>
+    </body>
+    
+ <script>
+    let carro = {
+        portas:4,
+        cor: 'branco',
+        modelo:'basic',
+        tetoSolar:false
+    }
+    if(carro.tetoSolar==false){
+        console.log("O modelo " + carro.modelo + " não tem teto solar");
+    }
+    console.log(carro.portas)//4
+    console.log(carro.cor)//branco
+
+    let carro2={        
+        portas:4,
+        cores: ['branco', 'preto','prata'],
+        modelo:'Plus',
+        tetoSolar:true    
+    }
+    if(carro2.tetoSolar==false){
+        console.log("O modelo " + carro2.modelo + " não tem teto solar");
+    }else{
+        console.log("O modelo " + carro2.modelo + " tem teto solar");
+    }
+    console.log("O modelo " + carro2.modelo + " temos nas cores: " + carro2.cores)
+     
+    let pessoa = {
+        nome: "Roque Fernando",
+        idade:34,
+        preferMusica:'Samba',
+
+        certificados:{ // Aqui coloco objeto dentro de objeto
+            nome:"Nome Js",
+            ano:2021
+        },    
+        falar:function (pais,profissao,estiloMusica){//não é uma função comum é um método por isso falar(nome do método): vem antes de function
+            this.preferMusica = estiloMusica
+            console.log("Olá, meu nome é: " + this.nome + 
+            " tenho " + this.idade + " anos." +
+            "Trabalho no " + pais + "como " + profissao + 
+            " Eu gosto de ouvir " + this.preferMusica) 
+    }
+ }   
+     
+    let nomePessoa = pessoa["nome"] //duas formas de pedir nome,pode ser pessoa.nome ou pessoa["nome"]
+    console.log(pessoa.certificados.nome,pessoa.certificados.ano)// inclui um objeto dentro de outro
+    console.log(nomePessoa.length)//14
+    console.log(pessoa.preferMusica)
+    const estiloMusica = pessoa.preferMusica
+    pessoa.falar("Afeganistão ", "Professor", pessoa.preferMusica)
+
+    pessoa.nome= "Renato"
+    pessoa.idade=45
+    pessoa.falar("Havai ", "Salva Vidas" ,"Sertanejo")
+    pessoa.falar("Havai ", "Salva Vidas" ,estiloMusica)
+
+
+ </script>
+</html>
